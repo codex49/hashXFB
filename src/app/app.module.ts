@@ -6,6 +6,7 @@ import { HeaderComponent } from './header/header.component';
 import { NavComponent } from './nav/nav.component';
 import { VideoTutorialComponent } from './video-tutorial/video-tutorial.component';
 import { WhyusingComponent } from './whyusing/whyusing.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { WhyusingComponent } from './whyusing/whyusing.component';
     HeaderComponent,
     NavComponent,
     VideoTutorialComponent,
-    WhyusingComponent
+    WhyusingComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule

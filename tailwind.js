@@ -40,6 +40,7 @@ const colors = {
     red: '#ed1c24',
     'red-light': '#D8454B',
     'green-dark': '#049038',
+    'blue-darkset': '#2c3e50',
     'blue-dark': '#3b5998',
     blue: '#8b9dc3',
     'blue-light': '#dfe3ee',
