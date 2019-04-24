@@ -1,3 +1,22 @@
 .why-using {
-    padding-top: 80px;
+    padding-top: 40px;
+
+    @media screen and (min-width: 1280px) {
+        padding-top: 80px;
+    }
 }
+
+.anonymous,
+.icon-automatic,
+.icon-anonymous,
+.icon-rate,
+.icon-use,
+.icon-payhack,
+.icon-reputation {
+    svg {
+        width: 60px;
+        height: 60px;
+        fill: #3b5998;
+    }
+}
+
