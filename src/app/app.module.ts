@@ -1,4 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { NgxPageScrollCoreModule } from 'ngx-page-scroll-core';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
@@ -7,6 +8,7 @@ import { NavComponent } from './nav/nav.component';
 import { VideoTutorialComponent } from './video-tutorial/video-tutorial.component';
 import { WhyusingComponent } from './whyusing/whyusing.component';
 import { FooterComponent } from './footer/footer.component';
+import { WizardCardComponent } from './wizard-card/wizard-card.component';
 
 @NgModule({
   declarations: [
@@ -15,10 +17,12 @@ import { FooterComponent } from './footer/footer.component';
     NavComponent,
     VideoTutorialComponent,
     WhyusingComponent,
-    FooterComponent
+    FooterComponent,
+    WizardCardComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    NgxPageScrollCoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]

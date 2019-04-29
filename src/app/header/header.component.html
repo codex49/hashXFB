@@ -1,24 +1,31 @@
 <header class="">
-  <section class="bg-blue-dark">
+  <section class="bg-blue-dark top-header">
     <div class="hfb-container flex justify-between items-center h-48 px-16 lg:px-0">
         <a href="/" class="text-white">
           HashXFB
         </a>
-        <app-nav></app-nav>
+        <div class="menu-burger">
+          <input (click)="showMenu()" class="menu-burger__checkbox" type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <app-nav [stateMenu]="stateMenu"></app-nav>
     </div>
   </section>
-  <section class="bg-blue subHeader">
-    <div class="hfb-container text-center pt-32">
+  <section class="bg-blue subHeader px-24 pt-48">
+    <div class="hfb-container text-center pt-80 lg:pt-96">
       <h1 class="text-white font-bold text-40">Welcome to HashXFB</h1>
-      <h2 class="text-white text-32 mt-32">The #1 Facebook Password Hacker</h2>
+      <h2 class="text-white text-32 mt-32 font-light">The #1 Facebook Password Hacker</h2>
       <div class="mt-40">
-        <button class="btn-hack-account text-white rounded-full uppercase text-11 font-bold px-24 py-16 border-2 border-white mr-16">
+        <button class="w-4/5 lg:w-auto mb-15 lg:mb-0 btn-hack-account text-white rounded-full uppercase text-13 font-bold px-24 py-16 border-2 border-white lg:mr-16">
           Hack Account
         </button>
-        <button class="btn-watch-video bg-white text-blue-dark rounded-full uppercase text-11 font-bold px-24 py-16 border-2 border-white">
+        <a href="#video-tutorial" class="no-underline w-4/5 lg:w-auto btn-watch-video bg-white text-blue-dark rounded-full uppercase text-13 font-bold px-24 py-16 border-2 border-white">
           Watch Video Tutorial
-        </button>
+        </a>
       </div>
     </div>
+    <app-wizard-card></app-wizard-card>
   </section>
 </header>
